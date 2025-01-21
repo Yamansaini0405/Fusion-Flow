@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to right, #1A1A2E, #16213E, #0F3460);
+  height: 100%;
+  margin: 0;
+}
+
+.bg{
+  background: linear-gradient(to right, #1A1A2E, #2146ad, #0F3460);
+}
+
+html {
+  scroll-behavior: smooth;
+}
