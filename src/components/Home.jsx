@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import MobileImg from '../assets/image-mobile.webp'
 
 
 import ImgRight from '../assets/image-right.webp'
@@ -15,14 +16,15 @@ function Home() {
   const isInView = useInView(ref, { once: true });
   return (
     <div className="bg-[url('../assets/hero.jpg')] bg-cover bg-center">
-      <div className=" border-2 border-gray-400 flex flex-col md:flex-row justify-center rounded-2xl items-center gap-x-4 md:py-4 w-[90%] md:w-[85%] px-4 m-auto  bg-cover bg-center mt-8 ">
+      <div className=" border-2 border-gray-400 flex flex-col md:flex-row justify-center rounded-2xl items-center gap-x-4 md:py-4 w-[90%] md:w-[85%] px-4 m-auto  bg-cover bg-center md:mt-8 mt-4 ">
       <motion.div
-          className="flex justify-start items-center object-fit mt-2 w-[25%] ml-8"
+          className="flex justify-start items-center object-fit mt-2 md:w-[25%] md:ml-8"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <img src={ImgLeft} alt="" className="h-[70vh]"/>
+          <img src={MobileImg} alt="" className="md:hidden h-[15vh] w-[100%]" />
+          <img src={ImgLeft} alt="" className="h-[70vh] hidden md:block"/>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -55,7 +57,7 @@ function Home() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <img src={ImgRight} alt="" className="h-[70vh]"/>
+          <img src={ImgRight} alt="" className="h-[70vh] hidden md:block"/>
         </motion.div>
       </div>
       <div className=" gap-x-8 md:mt-16 w-[95%] md:w-[100%] m-auto">

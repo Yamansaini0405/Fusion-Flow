@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-[80%] m-auto ">
+    <nav className="md:w-[80%] w-[90%] m-auto ">
       <div className="container mx-auto px- py-4 flex justify-between items-center gap-x-">
       <div
           className={`overflow-scroll scrollbar-hidden z-10 fixed top-0 left-0 h-full bg-black opacity-[0.9] text-white transition-transform duration-300 ease-in-out ${
@@ -58,7 +58,7 @@ const Navbar = () => {
         </div>
         <div className="flex space-x-4">
           <a to="/login">
-            <button className="text-white hover:bg-gray-200 font-semibold py-2 px-4 rounded border-2 border-white">
+            <button className="text-white hover:bg-gray-200 font-semibold py-2 px-4 rounded border-2 border-white hidden md:block">
               Login
             </button>
           </a>
