@@ -47,7 +47,7 @@ const Form = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-12">
+    <div className="max-w-6xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-12 w-[90%] md:w-[100%]">
       <h1 className="text-2xl font-bold text-center mb-6">
         Student Freelancing Interest Survey
       </h1>

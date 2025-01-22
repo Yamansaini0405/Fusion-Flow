@@ -16,7 +16,7 @@ function Home() {
   const isInView = useInView(ref, { once: true });
   return (
     <div className="bg-[url('../assets/hero.jpg')] bg-cover bg-center">
-      <div className=" border-2 border-gray-400 flex flex-col md:flex-row justify-center rounded-2xl items-center gap-x-4 md:py-4 w-[90%] md:w-[85%] px-4 m-auto  bg-cover bg-center md:mt-8 mt-4 ">
+      <div className=" border-2 border-gray-400 flex flex-col md:flex-row justify-center rounded-2xl items-center gap-x-4 md:py-4 w-[90%] md:w-[85%] px-4 m-auto  bg-cover bg-center md:mt-8 mt-4 pt-4 gap-y-6">
       <motion.div
           className="flex justify-start items-center object-fit mt-2 md:w-[25%] md:ml-8"
           initial={{ scale: 0.8, opacity: 0 }}
@@ -74,14 +74,14 @@ function Home() {
         </div>
       </div>
       <div>
-        <div className=" bg-gradient-to-br  py-16 px-4 w-[90%] m-auto rounded-2xl">
+        <div className=" bg-gradient-to-br  py-16 px-4 md:w-[90%] w-[95%] m-auto rounded-2xl">
           <div className="max-w-6xl mx-auto">
-            {/* Header Section */}
+        
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-center mb-16 "
+              className="text-center md:mb-16 mb-8 "
             >
               <h2 className="text-4xl font-bold text-white mb-4">
                 Why Choose Freelancing?
@@ -96,7 +96,7 @@ function Home() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
             
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 "
             >
       
               <motion.div
@@ -310,8 +310,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[85%] m-auto flex justify-center items-center">
-        <div className="left w-[50%] px-20">
+      <div className="md:w-[85%] w-[95%] m-auto md:flex justify-center items-center space-y-8 md:space-y-0">
+        <div className="left md:w-[50%] md:px-20 px-8">
           <h2 className="text-4xl font-bold text-white mb-8">Results from Survey!!</h2>
           <p className="text-md font-bold text-white">Lorem ipsum dolor sit amet  elit. In, sunt.</p>
           <p className="text-md font-bold text-white">Lorem ipsum dolor sit amet  elit. In, sunt.</p>
@@ -324,7 +324,7 @@ function Home() {
           </a>
            
         </div>
-        <div className="right w-[50%]  mr-4">
+        <div className="right md:w-[50%]  md:mr-4">
           <Bar/>
         </div>
       </div>

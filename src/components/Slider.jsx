@@ -75,7 +75,7 @@ const Slider = () => {
   );
 
   return (
-    <div className="bg-gray-100 py-6 px-4 md:px-20 rounded-2xl my-4">
+    <div className="bg-gray-100 py-6 px-12 md:px-20 rounded-2xl my-4 ">
       <div className="flex justify-between items-center mb-6 flex-col md:flex-row">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
           Project for what you need
